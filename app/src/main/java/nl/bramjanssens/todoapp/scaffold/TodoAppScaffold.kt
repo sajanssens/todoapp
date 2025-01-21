@@ -52,7 +52,7 @@ fun TodoAppScaffold() {
                     modifier = Modifier
                         .fillMaxWidth(),
                     textAlign = TextAlign.Center,
-                    text = "Bottom app bar",
+                    text = "(C) 2025 Bram Janssens",
                 )
             }
         },
@@ -69,7 +69,7 @@ fun TodoAppScaffold() {
         ) {
             Text(
                 modifier = Modifier.padding(8.dp),
-                text ="This is a demo for Jetpack Compose"
+                text = "This is a demo for Jetpack Compose"
             )
             TodoMain()
         }

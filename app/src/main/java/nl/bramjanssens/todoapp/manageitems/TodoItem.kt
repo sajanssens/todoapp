@@ -1,6 +1,12 @@
 package nl.bramjanssens.todoapp.manageitems
 
-data class TodoItem(val title: String, var completed: Boolean = false) {
+import java.util.UUID
+
+data class TodoItem(
+    var title: String,
+    var completed: Boolean = false,
+    var id: UUID? = UUID.randomUUID()
+) {
     fun toggle() {
         this.completed = !this.completed
     }
