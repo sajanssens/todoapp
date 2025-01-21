@@ -3,7 +3,7 @@ package nl.bramjanssens.todoapp
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import nl.bramjanssens.todoapp.manageitems.TodoMain
+import nl.bramjanssens.todoapp.scaffold.TodoAppScaffold
 import nl.bramjanssens.todoapp.ui.theme.TodoAppTheme
 
 class MainActivity :
@@ -17,7 +17,7 @@ class MainActivity :
         setContent { // verplicht
             // hier: welke composables (of oude onderdelen) worden getoond
             TodoAppTheme { // modifier verandert styling, behaviour, ...; is een decorator; kun je chainen en worden doorgegeven naar de children
-                TodoMain()
+                TodoAppScaffold()
             }
         }
     }
